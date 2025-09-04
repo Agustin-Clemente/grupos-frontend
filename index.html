@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grupos TP Com 3</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css">
+  
+</head>
+<body class="p-4 md:p-8">
+    <!-- Overlay de carga -->
+    <div id="loading-overlay" class="loading-overlay hidden">
+        <div class="spinner"></div>
+    </div>
+
+    <!-- Modal para mensajes -->
+    <div id="message-modal" class="fixed inset-0 bg-black bg-opacity-75 flex items-center justify-center z-50 hidden">
+        <div class="bg-gray-800 p-6 rounded-lg shadow-lg max-w-sm w-full mx-4 border border-gray-700">
+            <h3 id="modal-title" class="text-xl font-bold mb-4 text-center"></h3>
+            <p id="modal-message" class="text-center text-gray-300"></p>
+            <div class="flex justify-center mt-6">
+                <button id="modal-ok-btn" class="bg-blue-600 hover:bg-blue-700 text-white font-bold py-2 px-6 rounded-full transition-colors">
+                    OK
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal para ingresar DNI -->
+    <div id="dni-modal" class="fixed inset-0 bg-black bg-opacity-75 flex items-center justify-center z-50 hidden">
+        <div class="bg-gray-800 p-6 rounded-lg shadow-lg max-w-sm w-full mx-4 border border-gray-700">
+            <h3 id="dni-modal-title" class="text-xl font-bold mb-4 text-center">Validación de DNI</h3>
+            <p id="dni-modal-message" class="text-center text-gray-300 mb-4"></p>
+            <input type="text" id="dni-input" class="w-full px-4 py-2 rounded-lg bg-gray-700 text-white border border-gray-600 focus:outline-none focus:border-blue-500" placeholder="Ingresa tu DNI">
+            <div class="flex justify-between mt-6">
+                <button id="dni-modal-cancel-btn" class="bg-red-600 hover:bg-red-700 text-white font-bold py-2 px-6 rounded-full transition-colors">
+                    Cancelar
+                </button>
+                <button id="dni-modal-confirm-btn" class="bg-blue-600 hover:bg-blue-700 text-white font-bold py-2 px-6 rounded-full transition-colors">
+                    Confirmar
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <header class="text-center mb-8">
+        <h1 class="text-4xl md:text-5xl font-extrabold text-white tracking-tight">Grupos TP Com 3</h1>
+    </header>
+
+    <!-- Student Groups Section -->
+    <main class="grid grid-cols-1 md:grid-cols-2 gap-8 mb-12">
+        <div id="group1-students" class="rounded-2xl p-4 card min-h-64 flex flex-col items-center">
+            <h2 class="text-2xl font-bold mb-4 group-heading rounded-t-xl w-full">Grupo 1 Miércoles 10-09-2025 16:30 a 18:15 hs</h2>
+        </div>
+        <div id="group2-students" class="rounded-2xl p-4 card min-h-64 flex flex-col items-center">
+            <h2 class="text-2xl font-bold mb-4 group-heading rounded-t-xl w-full">Grupo 2 Miércoles 10-09-2025 18:15 a 20:00 hs</h2>
+        </div>
+    </main>
+
+    <!-- Change Section -->
+    <div id="change-section" class="mt-12 p-6 rounded-2xl card hidden">
+        <h2 class="text-2xl font-bold text-center mb-6 text-yellow-400">Quiero cambiar</h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+            <div id="change-group1" class="rounded-xl p-4 card min-h-48 flex flex-col items-center">
+                <h3 class="text-xl font-semibold mb-4 text-yellow-300">Grupo 1 Miércoles 10-09-2025 16:30 a 18:15 hs</h3>
+            </div>
+            <div id="change-group2" class="rounded-xl p-4 card min-h-48 flex flex-col items-center">
+                <h3 class="text-xl font-semibold mb-4 text-yellow-300">Grupo 2 Miércoles 10-09-2025 18:15 a 20:00 hs</h3>
+            </div>
+        </div>
+    </div>
+
+ <script type="module" src="/main.js"></script>
+</body>
+</html>
