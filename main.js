@@ -56,10 +56,10 @@ async function fetchStudents() {
 }
 
 function renderStudents(students) {
-    group1Container.innerHTML = `<h2 class="text-2xl font-bold mb-4 group-heading rounded-t-xl w-full">Grupo 1 Jueves 04-06-2026 08:30 a 10:30 hs</h2>`;
-    group2Container.innerHTML = `<h2 class="text-2xl font-bold mb-4 group-heading rounded-t-xl w-full">Grupo 2 Jueves 04-06-2026 10:30 a 12:30 hs</h2>`;
-    changeGroup1Container.innerHTML = `<h3 class="text-xl font-semibold mb-4 text-yellow-300">Grupo 1 Grupo 1 Jueves 04-06-2026 08:30 a 10:30 hs</h3>`;
-    changeGroup2Container.innerHTML = `<h3 class="text-xl font-semibold mb-4 text-yellow-300">Grupo 2 Grupo 2 Jueves 04-06-2026 10:30 a 12:30 hs</h3>`;
+    group1Container.innerHTML = `<h2 class="text-2xl font-bold mb-4 group-heading rounded-t-xl w-full">Grupo 1 Miércoles 23-09-2026 16:00 a 18:30 hs</h2>`;
+    group2Container.innerHTML = `<h2 class="text-2xl font-bold mb-4 group-heading rounded-t-xl w-full">Grupo 2 Miércoles 23-09-2026 17:30 a 20:00 hs</h2>`;
+    changeGroup1Container.innerHTML = `<h3 class="text-xl font-semibold mb-4 text-yellow-300">Grupo 1 Grupo 1 Miércoles 23-09-2026 16:00 a 18:30 hs</h3>`;
+    changeGroup2Container.innerHTML = `<h3 class="text-xl font-semibold mb-4 text-yellow-300">Grupo 2 Grupo 2 Miércoles 23-09-2026 17:30 a 20:00 hs</h3>`;
 
     const changeRequests = students.filter(s => s.estado === 'Quiero cambiar');
 
